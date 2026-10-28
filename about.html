@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Your Cuisine Chef</title>
+<meta name="description" content="Learn about Your Cuisine Chef - our story, our process and our commitment to fresh food.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(sessionStorage.getItem("ycc_seen"))document.documentElement.classList.add("seen")}catch(e){}</script>
+</head>
+<body>
+
+<div id="loader"><div class="ld"><img src="logo.jpg" alt="Your Cuisine Chef"><div class="bar"><i></i></div></div></div>
+<div id="progress"></div>
+<div class="cursor" id="cursor"></div>
+
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Your Cuisine Chef logo"></a>
+      <ul class="menu" id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <button class="icon-btn" id="theme" aria-label="Toggle theme">🌙</button>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart">🛒<span class="badge" id="cnt">0</span></button>
+        <a href="contact.html#booking" class="btn nav-cta">Book Now</a>
+        <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="blob" style="width:260px;height:260px;background:var(--orange);top:10%;right:8%"></div>
+  <div class="blob" style="width:220px;height:220px;background:var(--green2);bottom:0;left:6%"></div>
+  <div class="container">
+    <span class="tag">About Us</span>
+    <h1>Our <span>Story</span></h1>
+    <p class="sub">A passionate team of chefs who believe great food brings people together.</p>
+    <div class="crumb"><a href="index.html">Home</a> / About</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-img rv-el l">👨‍🍳<img src="about-chef.jpg" alt="Our chef presenting a freshly plated dish" onerror="this.remove()"><div class="exp"><b>12+</b>Years of Experience</div></div>
+    <div class="rv-el r">
+      <span class="tag">About Us</span>
+      <h2 class="title">Crafting <span>Unforgettable</span> Food Experiences</h2>
+      <p class="sub">We are a passionate team of chefs who believe great food brings people together. From fresh farm ingredients to live cooking stations, we handle everything so you can enjoy your event stress-free.</p>
+      <ul class="ticks">
+        <li>Fresh, hygienic & quality ingredients</li>
+        <li>Custom menus for every budget</li>
+        <li>Trained service staff & full setup</li>
+        <li>On-time delivery, every single time</li>
+      </ul>
+      <a href="contact.html" class="btn green">Talk To Our Chef</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="alt">
+  <div class="container">
+    <div class="head center rv-el"><span class="tag">What Drives Us</span><h2 class="title">Our <span>Mission</span> & Values</h2><p class="sub">The principles behind every meal we serve.</p></div>
+    <div class="grid3">
+      <div class="svc rv-el"><span class="ic">🎯</span><h3>Our Mission</h3><p>To serve nutritious, delicious food that brings people together in schools, workplaces and communities.</p></div>
+      <div class="svc rv-el d1"><span class="ic">🌱</span><h3>Quality First</h3><p>We never compromise on freshness, hygiene or taste, and every dish is made to a high standard.</p></div>
+      <div class="svc rv-el d2"><span class="ic">🤝</span><h3>Partnership</h3><p>We work closely with each client to build a food program that fits their people and their goals.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section>
+  <div class="container">
+    <div class="head center rv-el"><span class="tag">How It Works</span><h2 class="title">Simple <span>4-Step</span> Process</h2></div>
+    <div class="steps">
+      <div class="step rv-el"><div class="c">📞</div><h4>Contact Us</h4><p>Tell us your date, guests and budget.</p></div>
+      <div class="step rv-el d1"><div class="c">📋</div><h4>Pick Menu</h4><p>Choose dishes or a ready package.</p></div>
+      <div class="step rv-el d2"><div class="c">👨‍🍳</div><h4>We Cook</h4><p>Fresh preparation by expert chefs.</p></div>
+      <div class="step rv-el d3"><div class="c">🎉</div><h4>Enjoy!</h4><p>We serve, you celebrate.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="alt">
+  <div class="container">
+    <div class="head center rv-el"><span class="tag">Reviews</span><h2 class="title">What Clients <span>Say</span></h2></div>
+    <div class="tslider rv-el"><div class="ttrack" id="tt"></div></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="head center rv-el"><span class="tag">FAQ</span><h2 class="title">Common <span>Questions</span></h2></div>
+    <div class="faq rv-el" id="faq"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta rv-el">
+      <h2>Ready To Work With Us?</h2>
+      <p>Tell us about your school, workplace, coffee shop or event and we'll put together the right plan for you.</p>
+      <a href="contact.html#booking" class="btn" style="background:#fff;color:var(--orange)">Request Service Options →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="fgrid">
+      <div><img src="logo.jpg" alt="logo"><p style="font-size:.9rem;line-height:1.8">Premium catering with passion, freshness and flavour — for every celebration.</p>
+        <div class="soc"><a href="#">f</a><a href="#">📷</a><a href="#">▶</a><a href="#">𝕏</a></div></div>
+      <div><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="menu.html">Menu</a></li><li><a href="packages.html">Packages</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="services.html">K-12 Cafeterias</a></li><li><a href="services.html">Corporate Dining</a></li><li><a href="services.html">Coffee Shops</a></li><li><a href="services.html">Catering</a></li></ul></div>
+      <div><h4>Newsletter</h4><p style="font-size:.88rem">Get offers & new menu updates.</p>
+        <form class="nl" id="nl"><input id="nle" type="email" placeholder="Your email"><button class="btn" style="padding:0 20px">Join</button></form></div>
+    </div>
+    <div class="copy"><span>© <span id="yr"></span> Your Cuisine Chef</span><span>Designed by <b>Muhammad Saud Javed</b></span></div>
+  </div>
+</footer>
+
+<!-- cart -->
+<div id="overlay"></div>
+<aside id="cart">
+  <div class="ch"><h3>Your Order 🛒</h3><button id="cclose">×</button></div>
+  <div class="cb" id="cbody"></div>
+  <div class="cf">
+    <div class="tot"><span>Total</span><span id="ctotal">$0</span></div>
+    <button class="btn" id="checkout">Order on WhatsApp 💬</button>
+    <button class="btn out" id="clear" style="padding:10px">Clear Cart</button>
+  </div>
+</aside>
+
+
+<div id="toast"></div>
+<a class="fab wa" id="wa" href="#" aria-label="WhatsApp">💬</a>
+<button class="fab up" id="up" aria-label="Back to top">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
